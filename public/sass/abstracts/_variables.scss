@@ -1,0 +1,34 @@
+
+// Color
+$white-color: #FFF;
+$dark-green-color: #096;
+$gold-color: #C90;
+$red-color: #F00;
+$bg-grey-light: #F3F3F3;
+
+
+// Grid variables 
+
+$grid-max-width: 150rem;
+$grid-width: 100%;
+$grid-background-color: #FFF;
+$grid-vertical-gutter: .2rem;
+
+$linear-gradient: linear-gradient(
+		to right bottom,
+		rgba($dark-green-color,0.7),
+		rgba($gold-color,.5));
+
+
+$linear-gradient2:  linear-gradient(
+		90deg,
+		rgba($bg-grey-light,.9) 0%,
+		rgba($bg-grey-light,.9) 2%,
+		rgba($bg-grey-light,1) 60%,
+		transparent 40%);
+
+$grid-col-pad-left: 1%;
+$grid-horizontal-gutter: 1rem;
+$grid-col-calc-base-val: 8.3333333333%;
+
+

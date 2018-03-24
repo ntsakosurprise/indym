@@ -1,0 +1,284 @@
+
+
+.footer-content{
+	
+		position: relative;
+		
+
+		&__style{
+
+			background-color: $dark-green-color;
+			color: $white-color;
+			font-size: 1.7rem;
+			display: block;
+			position: relative;
+
+			@include responsive(tablet-portrait){
+
+
+				font-size: 2rem;
+
+			}
+
+
+			span{
+
+
+				display: block;
+				margin: 0 auto;
+				width: 80%;
+
+				@include responsive(phone){
+
+					width: 100%;
+
+
+				}
+
+				small{
+
+					display: inline-block;
+					padding-bottom: 1rem;
+
+					@include responsive(phone){
+
+
+						display: block;
+						padding-left: 33%;
+
+					}
+
+
+				}
+
+				small:not(:last-child){
+
+					margin-right: 25rem;
+
+					@include responsive(tablet-portrait){
+
+						margin-right: 60%;
+
+
+					}
+
+
+
+
+				}// End of not last-child small
+
+
+				small:last-child{
+
+
+					@include responsive(phone){
+
+
+						top: 25rem;
+						position: absolute;
+						background-color: $dark-green-color;
+						width: 100%;
+
+					}
+
+				}
+			
+
+
+
+			}
+			
+
+
+		}// End of footer style content
+
+
+
+		&__navigation{
+
+
+
+
+			width: 80%;
+			margin: 0 auto;
+
+
+			&include responsive(phone){
+
+
+				width: 100%;
+
+			}
+
+			section{
+
+
+						display: inline-block;
+
+						@include responsive(phone){
+
+							display:block;
+							padding-left: 30%;
+
+
+						}
+
+						&:last-child{
+
+							@include responsive(phone){
+
+								margin-top: 15rem;
+
+
+							}
+
+						}
+
+
+
+						ul{
+
+							list-style-type: none;
+							margin: 0;
+							padding: 0;
+
+							li{
+
+								font-size: 1.2rem;
+								margin-bottom: 2rem;
+								
+								@include responsive(tablet-portrait){
+
+
+									font-size: 1.5rem;
+
+								}
+
+								
+
+
+								
+								a{
+
+
+									text-decoration: none;
+									color: #000;
+
+								}
+
+							}
+
+						}// End of unordered list styles
+
+
+
+			}// End of section styles
+
+			
+
+			section:not(:last-child){
+
+
+				margin-right: 25rem;
+
+				@include responsive(tablet-portrait){
+
+					margin-right: 60%;
+
+
+				}
+
+			}
+
+		
+
+		}// End of footer navigation styles
+
+
+		&__brand{
+
+
+			
+			margin-left: 20%;
+
+			@include responsive(tablet-portrait){
+
+
+				margin-left: 10%;
+				margin-top: 5rem;
+
+
+			}
+			
+			p{
+
+				position: relative;
+
+			}
+
+			p:not(:last-child){
+
+				margin-bottom: 3rem;
+
+			}
+
+			label{
+
+
+				display: block;
+				margin-bottom: 1rem;
+				font-size: 1.5rem;
+
+				@include responsive(tablet-portrait){
+
+					display: inline-block;
+
+				}
+
+
+			}
+
+			img{
+
+				border-radius: 2px;
+
+			}
+
+			span{
+
+				display: inline-block;
+				margin-right: 1rem;
+				top: -2rem;
+				font-size: 1.4rem;
+				positon: relative;
+
+			}
+
+			.input-modify{
+
+				font-size: 1.2rem;
+				padding: .8rem;
+				border: solid 1px #FFF;
+
+				&:hover{
+
+					border:solid 1px $dark-green-color;
+
+				}
+
+				@include responsive(tablet-portrait){
+
+
+
+
+
+				}
+
+			}
+
+
+		}
+		
+
+
+}// End of footer content styles

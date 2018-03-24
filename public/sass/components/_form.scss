@@ -1,0 +1,352 @@
+.form{
+	
+	position: relative;
+	width: 100%;
+
+	&__group{
+
+		display: block;
+		margin-bottom: 2rem;
+		width: 80%;
+
+		@include responsive(phone){
+
+
+			width: 95%;
+
+		}
+
+
+
+	}
+
+	&__input{
+
+
+		border: none;
+		border-bottom: solid 1px #fff;
+		display: inline-block;
+		height: 3rem;
+		padding: .5rem 1rem;
+		width: 85%;
+
+		@include responsive(phone){
+
+
+			width: 100%;
+
+		}
+
+		&::input-placeholder{
+
+
+			color: red;
+
+		}
+
+		&:focus{
+
+			border: none;
+			border-bottom: solid 1px $gold-color;
+			transition: all .5s;
+
+		}
+
+		&:invalid{
+
+			border: none;
+			border-bottom: solid 1px red;
+			transition: all .5s;
+
+		}
+
+		
+
+	}
+
+	&__label{
+
+		display: block;
+		padding: 1rem;
+		transition: all .4s;
+		
+
+	}
+
+	&__input:placeholder-shown + &__label{
+
+			opacity: 0;
+			transform: translateY(-3rem);
+			visibility: hidden;
+
+	}
+
+
+	&__select__group{
+
+
+		display: inline-block;
+		width: 40%;
+
+		@include responsive(phone){
+
+			display: block;
+			width: 80%;
+
+		}
+
+
+	}
+
+	&__select__group:not(:last-child){
+
+
+
+		margin-right: 5%;
+
+	}
+
+	&__select__label{
+
+
+		color: $dark-green-color;
+		display: block;
+		font-size:  1.2rem;
+		margin-bottom: 1.1rem;
+
+
+
+	}
+
+	&__select{
+
+
+
+		border: none;
+		display: block;
+		height: 3rem;
+		width: 100%;
+
+
+
+	}
+
+	&__radio__group{
+
+
+		display: inline-block;
+		position: relative;
+
+		
+
+
+
+	}
+
+	&__radio__group:not(:last-child){
+
+
+		margin-right: 5rem;
+
+
+	}
+
+	&__radio__group__title{
+
+
+		display: inline-block;
+		margin-right: 5rem;
+
+
+	}
+
+	&__radio{
+
+		display: none;
+		
+
+	}
+
+
+	&__radio:checked + &__radio__label &__radio__button::after{
+
+		opacity: 1;
+		
+
+	}
+
+
+
+	&__radio__label{
+
+
+		font-size: 1.2rem;
+
+	}
+
+	&__radio__button{
+
+		border: solid 3px $dark-green-color;
+		border-radius: 50%;
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: -2rem;
+		width: 1.5rem;
+		height: 1.5rem;
+
+		&::after{
+
+
+			content: "";
+			display: block;
+			background-color: $gold-color;
+			height: .5rem;
+			width: .5rem;
+			position: relative;
+			opacity: 0;
+			top: .2rem;
+			transition: opacity .4s;
+			left: .2rem;
+			border-radius: 50%;
+
+			@include responsive(tablet-portrait){
+
+				left: .1rem;
+				top: .1rem;
+
+
+			}
+
+		}
+
+	}
+
+
+	&__checkbox__group__title{
+
+
+		display: inline-block;
+		
+
+
+	}
+
+	&__checkbox__group{
+
+
+		display: inline-block;
+		position: relative;
+
+
+
+	}
+
+	&__checkbox{
+
+
+		display: none;
+
+	}
+
+	&__checkbox:checked ~ &__checkbox__label small{
+
+
+			opacity: 1;
+		
+
+	}
+
+
+	&__checkbox__label{
+
+
+		bottom: 1.5rem;
+		font-size: 1.1rem;
+		
+	}
+
+	&__checkbox__button{
+
+		border: solid 3px $dark-green-color;
+		border-radius: 2px;
+		display: inline-block;
+		font-size: 1.2rem;
+		position: absolute;
+		bottom: 0;
+		left: 17rem;
+		width: 1.5rem;
+		height: 1.5rem;
+
+		small{
+
+			position: relative;
+			color: $gold-color;
+			font-size: 1.6rem;
+			font-weight: 700;
+			opacity: 0;
+			transition: opacity .4s;
+			top: -1rem;
+
+
+		}
+		
+
+
+
+	}
+
+
+	&__submit_btn{
+
+
+			
+			margin-top: 3rem;
+			position: absolute;
+			right: 30%;
+
+
+
+		
+
+		}
+
+	&__submit-btn{
+
+
+			border: none;
+			border-radius: 2px;
+			background-color: $dark-green-color;
+			color: $white-color;
+			font-size: 2rem;
+			padding: 1rem;
+			transition: all .4s;
+			width: 15rem;
+
+			&:hover{
+
+				background-color: $white-color ;
+				color: $dark-green-color;
+
+			}
+
+			
+
+	}
+
+	&__hidden{
+
+
+		opacity: 0;
+
+	}
+
+
+
+	
+
+
+
+
+
+}

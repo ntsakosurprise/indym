@@ -1,0 +1,186 @@
+
+.header{
+	
+	height: 95vh; /* Set the height to 95% of the total device viewport */
+	background-image:$linear-gradient,
+	url("../imgs/hero.jpg");
+	background-position: top;
+	background-size: cover;
+	padding: 2rem;
+	position: relative;
+	
+
+
+	@supports (clip-path: polygon(0 0,100% 0,100% 75vh, 0 100%)){
+
+		clip-path: polygon(0 0,100% 0,100% 75vh, 0 100%)
+
+
+	}
+
+
+	&__brand-logo{
+
+		width: 7rem;
+
+	}
+
+
+
+
+	
+}
+
+.brand-content{
+	
+	left: 90%;
+	position: absolute;
+	top: 4rem;
+
+	@include responsive(phone){
+
+		left: 85%;
+		position: relative;
+		top: 1rem;
+
+	}
+
+	@include responsive(tablet-portrait){
+
+		left:0 ;
+		position: relative;
+		top: 1rem;
+
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+.hero-content{
+	
+	
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	top: 45%;
+	transform: translate(-50%,-50%);
+	
+
+	@include responsive(tablet-portrait){
+
+
+		left: 30%;
+		transform: translate(-30%,-50%);
+
+	}
+
+	@include responsive(phone){
+
+
+		left: 15%;
+		transform: translate(-15%,-50%);
+
+	}
+	
+}
+
+.hero-heading{
+	
+	backface-visibilty: hidden;
+	
+}
+
+
+
+.hero-sub-head-1,
+.hero-sub-head-2{
+	
+	color: $white-color;
+	display: inline-block;
+	margin-bottom: 1.5rem;
+	
+
+	
+}
+
+.hero-sub-head-1{
+	
+	left: 2%;
+	letter-spacing: .2rem;
+	font-size: 5rem;
+	font-weight: 800;
+	position: relative;
+	
+	animation-name: moveInLeft;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+
+	@include responsive(tablet-landscape){
+
+
+		font-size: 4rem;
+		letter-spacing: .1rem;
+
+	}
+
+	@include responsive(tablet-portrait){
+
+
+		font-size: 3.2rem;
+
+	}
+	
+	@include responsive(phone){
+
+
+		font-size: 2.8rem;
+	}
+	
+	
+	
+}
+
+.hero-sub-head-2{
+	
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 2rem;
+	letter-spacing: .2rem;
+	
+	animation-name: moveInRight;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+
+
+	@include responsive(tablet-landscape){
+
+
+		font-size: 1.8rem;
+		letter-spacing: .1rem;
+
+	}
+
+	@include responsive(tablet-portrait){
+
+
+		font-size: 1.6rem;
+
+	}
+
+	@include responsive(phone){
+
+
+		font-size: 1.7rem;
+
+	}
+
+
+
+
+	
+}
