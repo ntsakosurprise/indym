@@ -24,9 +24,9 @@ var app = express();
 
 
 
-	 app.listen(3000,function(){ // Use the app object's listen() method to listen to request passed to the server.
+	 app.listen(process.env.PORT || 3000,function(){ // Use the app object's listen() method to listen to request passed to the server.
 
 
-    	console.log('The nodeJs Express app Server is Running fine');
+    	console.log('The app is runngin on heroku');
     	
     });
