@@ -27,6 +27,6 @@ var app = express();
 	 app.listen(process.env.PORT || 3000,function(){ // Use the app object's listen() method to listen to request passed to the server.
 
 
-    	console.log('The app is runngin on heroku');
+    	console.log('The app is running on heroku');
     	
     });
