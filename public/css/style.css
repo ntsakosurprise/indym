@@ -412,8 +412,9 @@ body {
           top: 15rem; } }
       @media only screen and (max-width: 600px) {
         .composition__photo--p4 {
-          left: 28%;
-          top: -7rem; } }
+          left: 37%;
+          top: 8rem;
+          position: absolute; } }
     .composition__photo:hover {
       box-shadow: 0 1rem 2rem rgba(255, 0, 0, 0.3);
       transform: scale(1.6);
