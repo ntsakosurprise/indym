@@ -1376,7 +1376,7 @@ body {
       padding: 20rem 0 20rem 0; } }
   @media only screen and (max-width: 600px) {
     .about-content {
-      padding: 20rem 0 5rem 0; } }
+      padding: 20rem 0 20rem 0; } }
   .about-content__text {
     width: 80%; }
     .about-content__text p {
