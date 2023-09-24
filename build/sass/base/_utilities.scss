@@ -1,0 +1,88 @@
+
+.bg-grey-light{
+	
+
+	background-color: $bg-grey-light;
+
+}
+
+.form-input-bg{
+	
+
+	background-color: $dark-green-color;
+}
+
+.form-input-border{
+	
+	border: solid 1px $dark-green-color !important;
+
+}
+
+.form-input-width{
+	
+	width: 50% !important;
+
+}
+
+
+.clearfix{
+
+
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+.u-text-center{
+	
+	text-align: center;
+}
+
+.u-text-lead{
+	
+	font-size: 1.6rem;
+	margin-bottom: 1.4rem;
+}
+
+.u-text-center{
+	
+	padding-left: 5rem;
+}
+
+
+.u-margin-small{
+	
+	margin-bottom: 1.6rem;
+}
+
+.u-margin-top-small{
+	
+	margin-top: 3rem;
+}
+
+.u-margin-top-medium{
+	
+	margin-top: 6rem;
+}
+
+.u-margin-left-small{
+	
+	margin-left: 6rem;
+}
+
+.u-margin-medium{
+	
+	margin-bottom: 10rem;
+}
+.u-margin-big{
+	
+	margin-bottom: 20rem;
+
+	@include responsive(tablet-portrait){
+
+
+
+		margin-bottom: 10rem;
+
+	}
+}

@@ -1,0 +1,31 @@
+
+PROBLEM: BUILD A GRID SYSTEM.
+
+The proposed grid system must be made up of rows where in each row a total of 12
+columns can be created.
+Classes representative of a kind of column must be created for each type of column.
+The grid should allow the user the ability to offset columns whenever needed.
+Class names will each start with the keyword Grid(in lowercase) followed by row for rows and
+followed by col for columns, furthermore, the keyword 'col' should be followed by a number representative
+of the size of the needed column.
+Grid offsets should also start with the keyword Grid followed by keyword offset that will then be followed by a
+number specifying the offset length.
+
+
+
+
+ALGORITHM:
+
+1. Define a row class that can be applied to any element.
+	the class should have declarations for: width,max-width,vertical gutter and background-color
+2. Define a class for each type of colum:
+	for each column, create declarations for: width,horizontal gutter,floats.
+
+	2.1 If the class name contains 12, make the class fill up the parent's(row) entire width,else if
+		it contains 11,
+
+
+
+
+
+
