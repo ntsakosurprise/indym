@@ -1,0 +1,468 @@
+
+.rotating-card{
+		
+
+	
+	-moz-perspective: 150rem;
+	perspective: 150rem;
+	height: 50rem;
+	position: relative;
+	
+	
+
+	@include responsive(tablet-landscape){
+
+
+		
+		height: auto;
+
+	}
+
+
+	@include responsive(tablet-portrait){
+
+
+		margin-bottom: 5rem;
+		
+
+	}
+	
+	
+
+	&__side {
+
+
+		backface-visibility: hidden;
+		border-radius: 3px;
+		height: 50rem;
+		overflow: hidden;
+		transition: all .8s ease;
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+
+
+		@include responsive(tablet-landscape){
+
+			position: relative;
+
+			
+
+
+
+		}
+
+		@include responsive(tablet-portrait){
+
+			
+			width: 60%;
+			margin: 0 auto;
+
+
+
+		}
+
+		@include responsive(phone){
+
+			
+			width: 80%;
+			margin: 0 auto;
+
+
+
+		}
+
+
+		
+		
+
+	}
+
+	&__side--front{
+
+		background-color: $white-color;
+
+		&__head{
+
+			height: 20rem;
+			
+			background-position: top;
+			background-size: cover;
+			margin-bottom: 5rem;
+			position: relative;
+			-webkit-background-blend-mode: linear;
+			-moz-background-blend-mode: linear;
+			background-blend-mode: linear;
+
+
+			-webkit-clip-path: polygon(0 0,100% 0,100% 10vh, 0 100%);
+			-moz-clip-path: polygon(0 0,100% 0,100% 10vh, 0 100%);
+			clip-path: polygon(0 0,100% 0,100% 20vh, 0 100%);
+
+			span{
+
+				color: $white-color;
+				display: block;
+				font-size: 2.5rem;
+				width: 12rem;
+				background-image:$linear-gradient;
+				margin-right: .5rem;
+				position: absolute;
+				top: 20%;
+				right:0;
+
+
+			}
+			
+
+		}// End front head styles
+
+		&__body{
+
+			ul{
+
+				list-style-type: none;
+				margin: 0 auto;
+				padding: 0 0 0 1rem;
+				width: 90%;
+
+
+				li{
+
+					border-bottom:solid 1px rgba(0,0,0,.2);
+					font-size: 1.8rem;
+					font-weight: 600;
+					padding-bottom: 1rem;
+					margin-bottom: 1rem;
+					width: 100%; 
+
+
+					span{
+
+						display: inline-block;
+
+						
+
+					}
+
+					span:first-child{
+
+						font-size: 1.4rem;
+						margin-right: 5%;
+						width: 35%;
+
+					}
+
+					span:nth-child(2){
+
+						color: $dark-green-color;
+						margin-right: 5%;
+						
+
+					}
+
+				}
+			}
+
+
+
+		}
+
+
+		&__head--1{
+
+			background-image: url("../imgs/composite_1_res_back.jpg");
+
+			@media only screen and(min-resolution: 192dpi) and (min-width: 600px),(min-device-pixel-ratio:2){
+
+
+				background-image: url("../imgs/composite_1.jpg");
+
+
+			}
+		}
+
+		&__head--2{
+
+			background-image: url("../imgs/composite_2_res_back.jpg");
+
+			@media only screen and(min-resolution: 192dpi) and (min-width: 600px),(min-device-pixel-ratio:2){
+
+
+				background-image: url("../imgs/composite_2.jpg");
+
+
+			}
+		}
+
+		&__head--3{
+
+			background-image: url("../imgs/composite_3_res_back.jpg");
+
+			@media only screen and(min-resolution: 192dpi) and (min-width: 600px),(min-device-pixel-ratio:2){
+
+
+				background-image: url("../imgs/composite_3.jpeg");
+
+
+			}
+		}
+
+
+
+	}// End of rotating-card_side--front styles
+
+
+
+
+	&__side--back{
+
+		background-color: $gold-color;
+		transform: rotateY(180deg);
+
+		@include responsive(tablet-landscape){
+
+			transform: rotateY(0);
+
+		}
+
+
+		&__head{
+
+			height: 40rem;
+			background-position: top;
+			background-size: cover;
+			margin-bottom: 5rem;
+			position: relative;
+			
+		
+
+			span{
+
+				color: transparent;
+				display: block;
+				font-size: 2.5rem;
+				font-weight: 800;
+				width: 15rem;
+				color: rgba($gold-color,.6);
+				margin-right: .5rem;
+				position: absolute;
+				transform: rotate(90deg);
+				top: 20%;
+				right:0;
+
+
+				@supports(background-clip: text) or (-webkit-background-clip: text){
+
+					background-clip: text;
+					-webkit-background-clip: text;
+					background-image: linear-gradient(to right bottom,
+				rgba(204,204,0,.8),
+				rgba(255,255,255,.9));
+				color: transparent;
+				
+				
+
+
+				}
+
+
+			}
+
+		}// End of rotating card back side head styles
+
+
+
+		&__body{
+
+			padding-bottom: 3rem;
+			outline-offset: .3rem;
+			position: relative;
+			
+
+				@include responsive(tablet-portrait){
+
+					text-align: center;
+
+					
+				}
+
+
+			& .btn-card{
+
+				text-decoration: none;
+				color: $white-color;
+				position: absolute;
+				bottom: 40%;
+				transform: translate(55%);
+				outline: solid 1px #FFF;
+			
+
+				@include responsive(tablet-portrait){
+
+					display: inline-block;
+					position: relative;
+					transform: translate(0);
+					bottom: 4rem;
+
+					
+				}
+
+				&:hover{
+
+					outline: none;
+
+				}
+
+			}
+
+		}
+
+
+		&__head--1{
+
+			background-image: url("../imgs/composite_1_res_back.jpg");
+
+			@media only screen and(min-resolution: 192dpi) and (min-width: 600px),(min-device-pixel-ratio:2){
+
+
+				background-image: url("../imgs/composite_1.jpg");
+
+
+			}
+		}
+
+		&__head--2{
+
+			background-image: url("../imgs/composite_2_res_back.jpg");
+
+			@media only screen and(min-resolution: 192dpi) and (min-width: 600px),(min-device-pixel-ratio:2){
+
+
+				background-image: url("../imgs/composite_2.jpg");
+
+
+			}
+		}
+
+		&__head--3{
+
+			background-image: url("../imgs/composite_3_res_back.jpg");
+
+			@media only screen and(min-resolution: 192dpi) and (min-width: 600px),(min-device-pixel-ratio:2){
+
+
+				background-image: url("../imgs/composite_3.jpeg");
+
+
+			}
+			span{
+
+				background-image: linear-gradient(to right bottom,
+				rgba(204,153,0,.8),
+				rgba(204,153,0,.9));
+
+			}
+			
+		}
+
+
+		
+	}// End of rotating card back styles
+
+
+	&:hover &__side--front{
+
+		transform: rotateY(-180deg);
+
+
+		@include responsive(tablet-landscape){
+
+			transform: rotateY(0);
+
+
+		}
+
+	}
+
+	&:hover &__side--back{
+
+		transform: rotateY(0);
+
+	}
+
+	&__btn{
+
+		
+		margin: 0 auto;
+		margin-top: 6rem;
+		width: 40%;
+		
+
+		@include responsive(tablet-portrait){
+
+
+			width: 60%;
+
+
+		}
+
+
+		@include responsive(phone){
+
+			text-align: center;
+			width: 100%;
+
+
+
+		}
+
+
+		
+
+		a{
+
+			color: $white-color;
+			text-decoration: none;
+			transform: translate(50%);
+			background-color:$dark-green-color;
+			box-shadow: 0 .3rem 5rem #fff;
+			transition: all .8s ease;
+			width: 30rem;
+
+			@include responsive(tablet-portrait){
+
+				transform: translate(0);
+
+
+			}
+
+
+
+
+			&:hover{
+
+				color: $dark-green-color;
+				background-color:$bg-grey-light;
+				transform: translate(50%);
+
+				@include responsive(tablet-portrait){
+
+				transform: translate(0) !important;
+
+
+			}
+
+
+			}
+		}
+
+	}
+
+	
+
+	
+	
+}// End of rotating-card component
+
