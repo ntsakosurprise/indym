@@ -8,9 +8,7 @@
   },
   "author": "Turtrozz",
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^4.7.2"
-  },
+  "devDependencies": {},
   "dependencies": {
     "express": "^4.16.3",
     "pug": "^2.0.3"
